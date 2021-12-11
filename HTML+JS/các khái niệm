@@ -1,0 +1,102 @@
+//  Hậu tố là nhận về cái copy  
+//  Tiền tố là nhận biến trc nó
+
+//  Điều kiện sai khi
+//      0
+//      false
+//      "" và ''
+//      undefined
+//      NaN
+//      null
+
+//  Làm việc với chuỗi 
+
+    var myString = 'Tự học JS'
+
+    // length 
+    console.log(myString.length); // đếm trong chuỗi có bao nhiêu ký tự 
+
+    // find index
+    console.log(myString.indexOf('JS', 6)); //lấy trong chuỗi chữ 'JS' từ vị trí thứ 6 và cho ra vị trí của chuỗi đã lấy
+    console.log(myString.lastIndexOf('JS')); //lấy trong chuỗi chữ 'JS' từ vị trí cuối cùng và cho ra vị trí của chuỗi đã lấy
+
+    // Cut string
+    console.log(myString.slice( 4, 6)); //cắt chuỗi từ vị trí thứ 4 đến vị trí thứ 6
+    console.log(myString.slice( -3, -1)); //cắt chuỗi từ phải sang trái
+
+    // Replace
+    console.log(myString.replace('JS', 'JavaScrip')); // thay thế một từ JS đầu tiên trong chuỗi thành JavaScrip
+    console.log(myString.replace(/JS/g, 'JavaScrip')); // thay thế tất cả từ JS trong chuỗi thành JavaScrip
+    
+    // Convert to upper case
+    console.log(myString.toUpperCase()); // Chuyển đổi tất cả các từ trong chuỗi thành in hoa
+
+    //convert to lower case
+    console.log(myString.toLowerCase()); // Chuyển đổi tất cả các từ in hoa trong chuỗi thành chữ thường
+
+    //Trim
+    console.log(myString.trim); // Loại bỏ các ký tự thừa
+
+    // Get a character by index
+    const myString2 = 'Duy Thanh';
+
+    console.log(myString2.charAt(3)); //lấy ra chữ tại vị trí số 3
+
+    // To fixed là làm tròn số vd: 3.5 -> 4
+// End chuỗi
+
+// Cách tạo mảng 
+    var language = [
+        'JavaScrip',
+        'PHP',
+        'Ruby',
+    ];
+    // Làm việc với mảng
+    var language = [
+        'JavaScrip',
+        'PHP',
+        'Ruby',
+    ];
+    // join
+    console.log(languge.join(', '));
+
+    // pop: xóa phần tử cuối mảng và trả về phần tử đã xóa
+    console.log(languge.pop());
+
+    //shift: xóa phần tử đầu mảng và trả về phần tử đã xóa
+    console.log(languge.shift());
+
+    // unshift: chèn thêm 1 hoặc nhiều phần tử ở đầu mảng
+    console.log(languge.unshift('PHP', .....));
+
+    // push: chèn thêm 1 hoặc nhiều phần tử ở cuối mảng
+    console.log(languge.push('PHP', .....));
+
+    // splice(item1, item2, [item3]): cắt Element trong mảng, 
+        // trong đó 
+            // item1 là vị trí cần cắt
+            // item2 là só lượng cần cắt
+            // item3 là chèn thêm phần tử khác có thể 1 hoặc nhiều phần tử
+    console.log(language.splice(1, 1, 'ReactJS', 'Java'));
+// End mảng
+
+// Hàm
+    function    tên function(tham số)
+
+    function showDialog() {
+        console.log('Hi, xin chào các bạn');
+    }
+    showDialog();
+
+// End Hàm
+
+
+//các loại function
+    //declaration
+        function showMessge() {
+
+        }
+    //expression
+    var tên = function() {
+
+    }
